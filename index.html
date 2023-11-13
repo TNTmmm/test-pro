@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- line seed font -->
+    <link rel="stylesheet" href="https://bit.ly/3CZa0Sz" type="text/css" charset="utf-8" />
+    <title>bus101/004/cafe</title>
+</head>
+<style>
+    * {
+        font-family: 'line_seed_sans_th';
+        scroll-behavior: smooth;
+        transition: .3s;
+    }
+</style>
+<body class="bg-neutral-800 h-screen flex items-center justify-center max-w-6xl mx-auto">
+    <div class="flex justify-center flex flex-wrap">
+        <a href="./Cafe.html">
+            <div  class="mx-4 my-4 bg-cover bg-no-repeat bg-[url('./image/logo-cafe.png')] bg-neutral-700 rounded-xl outline-4 outline-white shadow-lg shadow-white hover:shadow-red-500" style="width: 550px; height: 700px;">
+                <div onmouseenter="showLS()" onmouseleave="hideLS()" class="้hover:block hover:bg-neutral-700/40 hover:backdrop-blur-sm h-full w-full rounded-lg flex items-center justify-center">
+                    <h2 id="ls" class="font-bold text-3xl text-white hidden">Floral Cafe</h2>
+                </div>
+            </div>
+        </a>
+        
+    </div>
+    
+<div class="footer bg-black flex items-center justify-center text-white py-2">“เป็นส่วนหนึ่งของการเรียนการสอนรายวิชา BUS101  กลุ่มเรียน 004 คณะบริหารธุรกิจ มหาวิทยาลัยศรีปทุม” </div>
+
+    <script>
+        function showLS() {
+          document.getElementById('ls').classList.remove('hidden');
+        }
+      
+        function hideLS() {
+          document.getElementById('ls').classList.add('hidden');
+        }
+      </script>
+</body>
+</html>
